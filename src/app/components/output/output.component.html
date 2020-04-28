@@ -1,0 +1,12 @@
+<div  class="form-input" [formGroup]="form">  
+    <app-input  formControlName="inputControl"></app-input>
+</div>
+
+<div class="string-output">
+    <p>{{form.get('inputControl').value.teststring }}</p>
+</div>
+
+
+<ng-container *ngIf="highCount"> 
+    <p>character {{highChar}} has highest count = {{highCount}} </p>
+</ng-container>
